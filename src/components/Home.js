@@ -31,8 +31,81 @@ import video from '../images/menuvideo.mp4'
 
 
 const Home = () => {
+  const data=[
+    {
+      "id":1,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":599
+    },
+    {
+      "id":2,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":799
+    },
+    {
+      "id":3,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":399
+    },
+    {
+      "id":4,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":699
+    },
+    {
+      "id":5,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":899
+    },
+    {
+      "id":6,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":499
+    },
+    {
+      "id":7,
+      "title":"V-nack-kurti",
+      "photo":"",
+      "price":599
+    },
+    {
+      "id":8,
+      "title":"V-nack-kurti",
+      "photo":" ",
+      "price":599
+    },
+  ]
   return (
+    
+
+    
     <div>
+      <section>
+        <Row>
+        {
+              data.map((pooh) => {
+                return (
+                  
+              // <div>
+              //   <img src={"pooh.photo"} alt='' />
+              // </div>
+              <p>{pooh.title},{pooh.price}</p>
+              
+
+                )
+              }
+
+
+              )
+            }
+        </Row>
+      </section>
       {/* ------------------------Latest Arrivals Women Section----------------------- */}
       <section>
         <Container>

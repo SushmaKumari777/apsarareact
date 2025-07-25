@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <Header> </Header>
-      <Jsr></Jsr>
+      
        <Home> </Home>
        <Routes>
         <Route path="" element={<Home/>}/>
