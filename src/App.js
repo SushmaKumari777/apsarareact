@@ -15,7 +15,8 @@ import Allm from './components/Allm';
 import Jsr from './components/Jsr';
 import Footer from './components/Footer';
 import Strapkurti from './components/Strapkurti';
-import Addtocart from './components/addtocart';
+import Addtocart from './components/Addtocart';
+import Signin from './components/Signin';
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
         <Route path="/jsr" element={<Jsr />} />
         <Route path="/strapkurti" element={<Strapkurti />} />
         <Route path="/addtocart" element={<Addtocart />} />
-
+        <Route path="/signin" element={<Signin />} />
 
 
         <Route path='*' element={<Home />} />

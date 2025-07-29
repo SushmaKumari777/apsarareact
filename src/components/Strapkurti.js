@@ -11,7 +11,7 @@ const Strapkurti = () => {
     <Row>
         <Col md={6}>
         <div className='strap'>
-        <img src={strap} alt=''/>
+        <img src=''alt=''/>
       </div>
         </Col>
         <Col md={6}>
