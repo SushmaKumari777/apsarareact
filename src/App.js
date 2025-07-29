@@ -35,7 +35,7 @@ function App() {
         <Route path="/allm" element={<Allm />} />
         <Route path="/jsr" element={<Jsr />} />
         <Route path="/strapkurti" element={<Strapkurti />} />
-        <Route path="/addtocart" element={<Addtocart />} />
+        <Route path="/Addtocart" element={<Addtocart />} />
 
 
 
