@@ -82,10 +82,8 @@ const Home = () => {
       "price": 599
     },
   ]
+
   return (
-
-
-
     <div>
       <section>
           <Row>
@@ -96,12 +94,13 @@ const Home = () => {
             </Col>
           </Row>
       </section>
-      <section>
+      <section className='latestw'>
         <Row>
+          <h2>Latest Arrivals</h2>
           {
             data.map((pooh) => {
               return (
-                <Col className='latestw'>
+                <Col>
                   <Card style={{ width: '18rem' }}>
                     <Card.Img src={pooh.photo} />
                     <Card.Body>
@@ -119,6 +118,7 @@ const Home = () => {
           }
         </Row>
       </section>
+      
 
       {/* ------------------------Latest Arrivals Women Section----------------------- */}
       {/* <section>

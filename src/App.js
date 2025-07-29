@@ -17,6 +17,8 @@ import Footer from './components/Footer';
 import Strapkurti from './components/Strapkurti';
 import Addtocart from './components/Addtocart';
 import Signin from './components/Signin';
+import Vrinda from './components/Vrinda';
+
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/strapkurti" element={<Strapkurti />} />
         <Route path="/addtocart" element={<Addtocart />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/vrinda" element={<Vrinda />} />
+
 
 
         <Route path='*' element={<Home />} />
