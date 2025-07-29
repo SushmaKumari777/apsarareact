@@ -10,26 +10,26 @@ const Header = () => {
     return (
         <div>
             <header className='toparea' >
-                <Container>
+            
                     <Row>
                         <Col>
 
-                            {/* <marquee direction="left" scrollamount="20">
+                            <marquee direction="left" scrollamount="20">
                                 <p>Grab 10% off on first order &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Grab 10% off
                                     on first order</p>
-                            </marquee> */}
+                            </marquee>
 
                         </Col>
                     </Row>
-                </Container>
+            
             </header>
             <div>
                 <section className='menuarea'>
-                    <Container>
+                    
                         <Row>
                             <Col>
 
-                                <Navbar expand="lg" className="bg-body-tertiary">
+                                <Navbar expand="lg">
 
                                     <Navbar.Brand href="#home">APSARA</Navbar.Brand>
                                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -61,7 +61,7 @@ const Header = () => {
                             </Col>
                         </Row>
                         
-                    </Container>
+                
                 </section>
             </div>
         </div>

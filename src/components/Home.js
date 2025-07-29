@@ -1,22 +1,23 @@
 import React from 'react'
-
-import { Container, Row, Col } from 'react-bootstrap'
-import wm1 from '../images/wm1.webp'
-import wm2 from '../images/wm2.webp'
-import wm3 from '../images/wm3.webp'
-import wm4 from '../images/wm4.webp'
-import m1 from '../images/m1.jpg'
-import m2 from '../images/m2.jpg'
-import m3 from '../images/m3.webp'
-import m4 from '../images/m4.webp'
-import pooh from '../images/pooh.webp'
-import naina from '../images/naina.webp'
-import geet from '../images/geet.webp'
-import aisa from '../images/aisa.webp'
-import halfstyle from '../images/half style.webp'
-import desi from '../images/desi.webp'
-import sanskari from '../images/sanskari.webp'
-import all from '../images/allrounder.webp'
+import '../App.css'
+  
+import { Container, Row, Col, Card } from 'react-bootstrap'
+// import wm1 from '../images/wm1.webp'
+// import wm2 from '../images/wm2.webp'
+// import wm3 from '../images/wm3.webp'
+// import wm4 from '../images/wm4.webp'
+// import m1 from '../images/m1.jpg'
+// import m2 from '../images/m2.jpg'
+// import m3 from '../images/m3.webp'
+// import m4 from '../images/m4.webp'
+// import pooh from '../images/pooh.webp'
+// import naina from '../images/naina.webp'
+// import geet from '../images/geet.webp'
+// import aisa from '../images/aisa.webp'
+// import halfstyle from '../images/half style.webp'
+// import desi from '../images/desi.webp'
+// import sanskari from '../images/sanskari.webp'
+// import all from '../images/allrounder.webp'
 
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router'
@@ -31,83 +32,96 @@ import video from '../images/menuvideo.mp4'
 
 
 const Home = () => {
-  const data=[
+  const data = [
     {
-      "id":1,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":599
+      "id": 1,
+      "title": "V-nack-kurti",
+      "photo": "wm1.webp",
+      "price": 599
     },
     {
-      "id":2,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":799
+      "id": 2,
+      "title": "V-nack-kurti",
+      "photo": "wm2.webp",
+      "price": 799
     },
     {
-      "id":3,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":399
+      "id": 3,
+      "title": "V-nack-kurti",
+      "photo": "wm3.webp",
+      "price": 399
     },
     {
-      "id":4,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":699
+      "id": 4,
+      "title": "V-nack-kurti",
+      "photo": "wm4.webp",
+      "price": 699
     },
     {
-      "id":5,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":899
+      "id": 5,
+      "title": "V-nack-kurti",
+      "photo": "wm4.webp",
+      "price": 899
     },
     {
-      "id":6,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":499
+      "id": 6,
+      "title": "V-nack-kurti",
+      "photo": "wm3.webp",
+      "price": 499
     },
     {
-      "id":7,
-      "title":"V-nack-kurti",
-      "photo":"",
-      "price":599
+      "id": 7,
+      "title": "V-nack-kurti",
+      "photo": "wm2.webp",
+      "price": 599
     },
     {
-      "id":8,
-      "title":"V-nack-kurti",
-      "photo":" ",
-      "price":599
+      "id": 8,
+      "title": "V-nack-kurti",
+      "photo": "wm1.webp",
+      "price": 599
     },
   ]
   return (
-    
 
-    
+
+
     <div>
       <section>
+          <Row>
+            <Col>
+              <video width="100%" height="100%" autoPlay muted loop>
+                <source src={video} type="video/mp4" />
+              </video>
+            </Col>
+          </Row>
+      </section>
+      <section>
         <Row>
-        {
-              data.map((pooh) => {
-                return (
-                  
-              // <div>
-              //   <img src={"pooh.photo"} alt='' />
-              // </div>
-              <p>{pooh.title},{pooh.price}</p>
-              
-
-                )
-              }
-
-
+          {
+            data.map((pooh) => {
+              return (
+                <Col className='latestw'>
+                  <Card style={{ width: '18rem' }}>
+                    <Card.Img src={pooh.photo} />
+                    <Card.Body>
+                      <Card.Title>V-Neck-Strap Kurti</Card.Title>
+                      <Card.Text>
+                        <p>Rs.{pooh.price}</p>
+                      </Card.Text>
+                      <Button variant="primary">Choose Option</Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
               )
             }
+            )
+          }
         </Row>
       </section>
+
       {/* ------------------------Latest Arrivals Women Section----------------------- */}
-      <section>
+      {/* <section>
         <Container>
           <Row>
             <Col>
@@ -191,9 +205,9 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
       {/*------ -------- Latest Arrivals Men Section-----------------*/}
-      <section className='latestm'>
+      {/* <section className='latestm'>
         <Container>
           <Row>
             <Col>
@@ -257,9 +271,9 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
 
-      <section className='womencollections'>
+      {/* <section className='womencollections'>
         <Container>
           <Row>
             <Col>
@@ -294,8 +308,8 @@ const Home = () => {
           </Row>
 
         </Container>
-      </section>
-      <section className='mencollections'>
+      </section> */}
+      {/* <section className='mencollections'>
         <Container>
           <Row>
             <Col>
@@ -337,8 +351,8 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </section>
-      <section className='slidearea'>
+      </section> */}
+      {/* <section className='slidearea'>
         <Container>
           <Row>
             <Col>
@@ -354,21 +368,21 @@ const Home = () => {
           <Carousel>
             <Carousel.Item>
               <img src={slide1} alt='' />
-              {/* <ExampleCarouselImage text="First slide" /> */}
+              <ExampleCarouselImage text="First slide" />
               <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              {/* <ExampleCarouselImage text="Second slide" /> */}
+              <ExampleCarouselImage text="Second slide" />
               <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              {/* <ExampleCarouselImage text="Third slide" /> */}
+              <ExampleCarouselImage text="Third slide" />
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>
@@ -378,7 +392,7 @@ const Home = () => {
             </Carousel.Item>
           </Carousel>
         </Container>
-      </section>
+      </section> */}
 
     </div>
   )
