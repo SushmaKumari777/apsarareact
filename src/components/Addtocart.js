@@ -2,7 +2,8 @@ import React from 'react'
 import { Col, Row, Button } from 'react-bootstrap'
 import '../App.css'
 
-const addtocart = () => {
+const Addtocart = () => {
+
   return (
     <div>
       <Row>
@@ -53,4 +54,4 @@ const addtocart = () => {
   )
 }
 
-export default addtocart
+export default Addtocart

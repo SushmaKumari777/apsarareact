@@ -37,6 +37,8 @@ const Header = () => {
                                         <Nav className="me-auto">
                                             <Nav.Link href="#home"><Link to="/home">Home</Link></Nav.Link>
                                             <Nav.Link href="#action/3.5"><Link to="/jsr">JSR</Link></Nav.Link>
+                                            <Nav.Link href="#"><Fontawesome icon={faSearch}/></Nav.Link>
+
 
 
                                             <NavDropdown title="Women" id="basic-nav-dropdown">

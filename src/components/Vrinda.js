@@ -1,17 +1,30 @@
 import React from 'react'
-import { Row,Col } from 'react-bootstrap'
+import { Row,Col, Button } from 'react-bootstrap'
+import '../App.css'
 
 const Vrinda = () => {
   return (
     <div>
         <Row>
-            <Col>
-            <div>
+            <Col className='vrinda'>
                 <img src='vrinda.webp' />
-            </div>
             </Col>
             <Col>
             <h1>Vrinda - Square neck Kurti</h1>
+            <p>Rs.599</p>
+            <p>
+              Size
+              <Button>XS</Button>
+              <Button>S</Button>
+              <Button>M</Button>
+              <Button>L</Button>
+            </p>
+            <p>
+              Quantity
+              <Button>-1+</Button>
+            </p>
+            <Button>Add to cart</Button>
+            <Button>Buy it now</Button>
             </Col>
         </Row>
     </div>
