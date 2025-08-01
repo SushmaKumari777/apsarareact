@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-  
+
 import { Container, Row, Col, Card } from 'react-bootstrap'
 // import wm1 from '../images/wm1.webp'
 // import wm2 from '../images/wm2.webp'
@@ -82,17 +82,59 @@ const Home = () => {
       "price": 599
     },
   ]
+  const mens = [
+    {"id": 1,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 2,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 3,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 4,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 5,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 6,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 7,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    },
+    {"id": 8,
+      "title":"Blue shirt",
+      "photo":"blue shirt.jpg",
+      "price":799
+    }
+  ]
 
   return (
     <div>
       <section>
-          <Row>
-            <Col>
-              <video width="100%" height="100%" autoPlay muted loop>
-                <source src={video} type="video/mp4" />
-              </video>
-            </Col>
-          </Row>
+        <Row>
+          <Col>
+            <video width="100%" height="100%" autoPlay muted loop>
+              <source src={video} type="video/mp4" />
+            </video>
+          </Col>
+        </Row>
       </section>
       <section className='latestw'>
         <Row>
@@ -101,12 +143,38 @@ const Home = () => {
             data.map((pooh) => {
               return (
                 <Col>
-                  <Card style={{ width: '18rem' }}>
+                 <Link to={'/viewProduct/' +pooh.id}>
+                 <Card style={{ width: '18rem' }}>
                     <Card.Img src={pooh.photo} />
                     <Card.Body>
                       <Card.Title>V-Neck-Strap Kurti</Card.Title>
                       <Card.Text>
                         <p>Rs.{pooh.price}</p>
+                      </Card.Text>
+                      <Button variant="primary">Choose Option</Button>
+                    </Card.Body>
+                  </Card>
+                 </Link>
+                </Col>
+              )
+            }
+            )
+          }
+        </Row>
+      </section>
+      <section className='latestm'>
+        <Row>
+          <h2>Latest Arrivals</h2>
+          {
+            mens.map((men) => {
+              return (
+                <Col>
+                  <Card style={{ width: '18rem' }}>
+                    <Card.Img src={men.photo} />
+                    <Card.Body>
+                      <Card.Title>Blue shirt</Card.Title>
+                      <Card.Text>
+                        <p>Rs.{men.price}</p>
                       </Card.Text>
                       <Button variant="primary">Choose Option</Button>
                     </Card.Body>
@@ -118,7 +186,7 @@ const Home = () => {
           }
         </Row>
       </section>
-      
+
 
       {/* ------------------------Latest Arrivals Women Section----------------------- */}
       {/* <section>

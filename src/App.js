@@ -18,6 +18,7 @@ import Strapkurti from './components/Strapkurti';
 import Addtocart from './components/Addtocart';
 import Signin from './components/Signin';
 import Vrinda from './components/Vrinda';
+import ViewProduct from './components/ViewProduct';
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
         <Route path="/addtocart" element={<Addtocart />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/vrinda" element={<Vrinda />} />
-
+        <Route path="/viewProduct/:productId" element={<ViewProduct />} />
 
 
         <Route path='*' element={<Home />} />

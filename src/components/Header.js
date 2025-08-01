@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router';
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+// import { faSearch } from '@fortawesome/free-solid-svg-icons'
 // import{Fontawesome} from'react-bootstrap'
 
 const Header = () => {
@@ -39,7 +39,7 @@ const Header = () => {
                                     <Nav className="me-auto">
                                         <Nav.Link href="#home"><Link to="/home">Home</Link></Nav.Link>
                                         <Nav.Link href="#action/3.5"><Link to="/jsr">JSR</Link></Nav.Link>
-                                        <p><Fontawesome icon={faSearch} /></p>
+                                        {/* <p><Fontawesome icon={faSearch} /></p> */}
 
 
                                         <NavDropdown title="Women" id="basic-nav-dropdown">
