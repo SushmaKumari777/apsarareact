@@ -1,11 +1,16 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import { data, useParams } from 'react-router'
 
 const ViewProduct = () => {
-    const {productId}=useParams();
+  const { productId } = useParams();
+
   return (
+
     <div>
-      <h1>sk {productId}</h1>
+
+      <h1>{productId}</h1>
+
+      
     </div>
   )
 }

@@ -19,7 +19,7 @@ import Addtocart from './components/Addtocart';
 import Signin from './components/Signin';
 import Vrinda from './components/Vrinda';
 import ViewProduct from './components/ViewProduct';
-
+import BuyNow from './components/BuyNow';
 
 function App() {
   return (
@@ -39,10 +39,11 @@ function App() {
         <Route path="/allm" element={<Allm />} />
         <Route path="/jsr" element={<Jsr />} />
         <Route path="/strapkurti" element={<Strapkurti />} />
-        <Route path="/addtocart" element={<Addtocart />} />
+        <Route path="/addtocart/:productId" element={<Addtocart />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/vrinda" element={<Vrinda />} />
         <Route path="/viewProduct/:productId" element={<ViewProduct />} />
+        <Route path="/buyNow" element={<BuyNow />} />
 
 
         <Route path='*' element={<Home />} />

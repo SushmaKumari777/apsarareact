@@ -83,45 +83,75 @@ const Home = () => {
     },
   ]
   const mens = [
-    {"id": 1,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 1,
+      "title": "Blue shirt",
+      "photo": "blue shirt.jpg",
+      "price": 399
     },
-    {"id": 2,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 2,
+      "title": "Blue shirt",
+      "photo": "mayur.webp",
+      "price": 699
     },
-    {"id": 3,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 3,
+      "title": "Blue shirt",
+      "photo": "blue shirt.jpg",
+      "price": 599
     },
-    {"id": 4,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 4,
+      "title": "Blue shirt",
+      "photo": "tarang.webp",
+      "price": 799
     },
-    {"id": 5,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 5,
+      "title": "Blue shirt",
+      "photo": "mayur.webp",
+      "price": 799
     },
-    {"id": 6,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 6,
+      "title": "Blue shirt",
+      "photo": "blue shirt.jpg",
+      "price": 699
     },
-    {"id": 7,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 7,
+      "title": "Blue shirt",
+      "photo": "blue shirt.jpg",
+      "price": 999
     },
-    {"id": 8,
-      "title":"Blue shirt",
-      "photo":"blue shirt.jpg",
-      "price":799
+    {
+      "id": 8,
+      "title": "Blue shirt",
+      "photo": "blue shirt.jpg",
+      "price": 499
+    }
+  ]
+  const collections = [
+    {
+      "id": 1,
+      "photo": "naina.webp",
+      "title": "Naina"
+    },
+    {
+      "id": 1,
+      "photo": "pooh.webp",
+      "title": "Pooh"
+    },
+    {
+      "id": 1,
+      "photo": "g.webp",
+      "title": "Geet"
+    },
+    {
+      "id": 1,
+      "photo": "a.webp",
+      "title": "Aisa"
     }
   ]
 
@@ -142,19 +172,19 @@ const Home = () => {
           {
             data.map((pooh) => {
               return (
-                <Col>
-                 <Link to={'/viewProduct/' +pooh.id}>
-                 <Card style={{ width: '18rem' }}>
-                    <Card.Img src={pooh.photo} />
-                    <Card.Body>
-                      <Card.Title>V-Neck-Strap Kurti</Card.Title>
-                      <Card.Text>
-                        <p>Rs.{pooh.price}</p>
-                      </Card.Text>
-                      <Button variant="primary">Choose Option</Button>
-                    </Card.Body>
-                  </Card>
-                 </Link>
+                <Col md={3}>
+                  <Link to={'/viewProduct/' + pooh.id}>
+                    <Card style={{ width: '18rem' }}>
+                      <Card.Img src={pooh.photo} />
+                      <Card.Body>
+                        <Card.Title>V-Neck-Strap Kurti</Card.Title>
+                        <Card.Text>
+                          <p>Rs.{pooh.price}</p>
+                        </Card.Text>
+                        <Button variant="primary">Choose Option</Button>
+                      </Card.Body>
+                    </Card>
+                  </Link>
                 </Col>
               )
             }
@@ -168,18 +198,36 @@ const Home = () => {
           {
             mens.map((men) => {
               return (
-                <Col>
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Img src={men.photo} />
-                    <Card.Body>
-                      <Card.Title>Blue shirt</Card.Title>
-                      <Card.Text>
-                        <p>Rs.{men.price}</p>
-                      </Card.Text>
-                      <Button variant="primary">Choose Option</Button>
-                    </Card.Body>
-                  </Card>
+                <Col md={3}>
+                  <Link to={'/addtocart/' + men.id}>
+                    <Card style={{ width: '18rem' }}>
+                      <Card.Img src={men.photo} />
+                      <Card.Body>
+                        <Card.Title>Blue shirt</Card.Title>
+                        <Card.Text>
+                          <p>Rs.{men.price}</p>
+                        </Card.Text>
+                        <Button variant="primary">Choose Option</Button>
+                      </Card.Body>
+                    </Card>
+                  </Link>
                 </Col>
+              )
+            }
+            )
+          }
+        </Row>
+      </section>
+      <section className='womencollections' >
+        <Row>
+          {
+            collections.map((women) => {
+              return (
+                <Col md={3}>
+                  <img src={women.photo} />
+                  <p>{women.title}</p>
+                </Col>
+
               )
             }
             )
