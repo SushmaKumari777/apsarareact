@@ -20,6 +20,7 @@ import Signin from './components/Signin';
 import Vrinda from './components/Vrinda';
 import ViewProduct from './components/ViewProduct';
 import BuyNow from './components/BuyNow';
+import Category from './components/Category';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/vrinda" element={<Vrinda />} />
         <Route path="/viewProduct/:productId" element={<ViewProduct />} />
         <Route path="/buyNow" element={<BuyNow />} />
+        <Route path="/Category" element={<Category />} />
 
 
         <Route path='*' element={<Home />} />

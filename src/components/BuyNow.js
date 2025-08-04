@@ -6,9 +6,18 @@ const BuyNow = () => {
         {
             "id": 1,
             "title": "v-neck-kurti",
-            "price": 599
-        },
-        {
+            "brand":"",
+            "fit":"regular", //regular or slim
+            "price": 599,
+            "fabric":"cotton", //cotton or georget
+            "sleeve":"fullSleeve",
+            "ocassion":"formal",
+            "category": "tshirt",
+            "other":"",
+            "idealFor": "male",
+            "size":[
+                "M","L"
+            ],
             "images": [
                 "vNeck1.webp",
                 "vNeck2.webp",
@@ -116,13 +125,13 @@ const BuyNow = () => {
         <div>
             <section>
                 <Row>
-                   {
-                   data.map((product)=>{
-                    <img src={product.images} />
-                   }
+                    {
+                        data.map((product) => {
+                            <img src={product.images} />
+                        }
 
-                   )
-                   }
+                        )
+                    }
                 </Row>
             </section>
         </div>
