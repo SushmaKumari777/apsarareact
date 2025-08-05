@@ -15,12 +15,14 @@ import Allm from './components/Allm';
 import Jsr from './components/Jsr';
 import Footer from './components/Footer';
 import Strapkurti from './components/Strapkurti';
-import Addtocart from './components/Addtocart';
+// import Addtocart from './components/Addtocart';
 import Signin from './components/Signin';
 import Vrinda from './components/Vrinda';
 import ViewProduct from './components/ViewProduct';
-import BuyNow from './components/BuyNow';
+// import BuyNow from './components/BuyNow';
 import Category from './components/Category';
+import Buy from './components/Buy';
+
 
 function App() {
   return (
@@ -40,12 +42,13 @@ function App() {
         <Route path="/allm" element={<Allm />} />
         <Route path="/jsr" element={<Jsr />} />
         <Route path="/strapkurti" element={<Strapkurti />} />
-        <Route path="/addtocart/:productId" element={<Addtocart />} />
+        {/* <Route path="/addtocart/:productId" element={<Addtocart />} /> */}
         <Route path="/signin" element={<Signin />} />
         <Route path="/vrinda" element={<Vrinda />} />
         <Route path="/viewProduct/:productId" element={<ViewProduct />} />
-        <Route path="/buyNow" element={<BuyNow />} />
-        <Route path="/Category" element={<Category />} />
+        {/* <Route path="/buyNow" element={<BuyNow />} /> */}
+        <Route path="/category" element={<Category />} />
+        <Route path="/buy" element={<Buy />} />
 
 
         <Route path='*' element={<Home />} />
