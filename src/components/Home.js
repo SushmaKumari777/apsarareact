@@ -32,6 +32,7 @@ import video from '../images/menuvideo.mp4'
 
 
 const Home = () => {
+  // -------------------Women section------------------------
   const data = [
     {
       "id":1,
@@ -581,85 +582,355 @@ const Home = () => {
         }
       ]
     }
-    // {
-    //   "id": 1,
-    //   "title": "Laal Bijli - V neck Strap Kurti",
-    //   "photo": "p101.webp",
-    //   "price": 599
-    // },
-    // {
-    //   "id": 2,
-    //   "title": "V-nack-kurti",
-    //   "photo": "",
-    //   "price": 799
-    // },
-    // {
-    //   "id": 3,
-    //   "title": "V-nack-kurti",
-    //   "photo": "wm3.webp",
-    //   "price": 399
-    // },
-    // {
-    //   "id": 4,
-    //   "title": "V-nack-kurti",
-    //   "photo": "wm4.webp",
-    //   "price": 699
-    // },
-    // {
-    //   "id": 5,
-    //   "title": "V-nack-kurti",
-    //   "photo": "wm4.webp",
-    //   "price": 899
-    // },
-    // {
-    //   "id": 6,
-    //   "title": "V-nack-kurti",
-    //   "photo": "wm3.webp",
-    //   "price": 499
-    // },
-    // {
-    //   "id": 7,
-    //   "title": "V-nack-kurti",
-    //   "photo": "wm2.webp",
-    //   "price": 599
-    // },
-    // {
-    //   "id": 8,
-    //   "title": "V-nack-kurti",
-    //   "photo": "wm1.webp",
-    //   "price": 599
-    // },
+    
   ]
+  // ----------------Men section-------------------
   const mens = [
     {
       "id": 1,
-      "title": "Blue shirt",
-      "photo": "blue shirt.jpg",
-      "price": 399
+      "title": "The Sagar Blue Shirt",
+      
+      "price1": 999,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "Men", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p1001.webp",
+        "p1002.webp",
+        "p1003.jpg",
+        "p1005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Blue shirt",
-      "photo": "mayur.webp",
-      "price": 699
+      "title": "The Rama Leaf Oversize Green Shirt",
+      "price1": 299,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "Men", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p2002.webp",
+        "p2003.webp",
+        "p2004.webp",
+        "p2005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Blue shirt",
-      "photo": "blue shirt.jpg",
-      "price": 599
+      "title": "The Neel Shirt – The Indigo Bloom",
+     "price1": 399,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "Men", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p3001.webp",
+        "p3002.webp",
+        "p3003.jpg",
+        "p3005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Blue shirt",
-      "photo": "tarang.webp",
-      "price": 799
+      "title": "The Mayur Green Shirt",
+     "price1": 499,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "Men", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p4001.webp",
+        "p4002.webp",
+        "p4003.jpg",
+        "p4005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "Blue shirt",
-      "photo": "mayur.webp",
-      "price": 799
+      "title": "The Cherry Red oversize shirt",
+     "price1": 599,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "women", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p1001.webp",
+        "p1002.webp",
+        "p1003.jpg",
+        "p1005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
     {
       "id": 6,
@@ -670,14 +941,140 @@ const Home = () => {
     {
       "id": 7,
       "title": "Blue shirt",
-      "photo": "blue shirt.jpg",
-      "price": 999
+      "price1": 999,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "women", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p1001.webp",
+        "p1002.webp",
+        "p1003.jpg",
+        "p1005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
     {
       "id": 8,
       "title": "Blue shirt",
-      "photo": "blue shirt.jpg",
-      "price": 499
+     "price1": 999,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Shirt",
+      "other": "",
+      "idealFor": "women", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Free",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "p1001.webp",
+        "p1002.webp",
+        "p1003.jpg",
+        "p1005.webp"
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     }
   ]
   const collections = [
@@ -747,13 +1144,13 @@ const Home = () => {
             mens.map((men) => {
               return (
                 <Col md={3}>
-                  <Link to={'/addtocart/' + men.id}>
+                  <Link to={'/buy/' + men.id}>
                     <Card style={{ width: '18rem' }}>
-                      <Card.Img src={men.photo} />
+                      <Card.Img src={men.images} />
                       <Card.Body>
-                        <Card.Title>Blue shirt</Card.Title>
+                        <Card.Title>{men.title}</Card.Title>
                         <Card.Text>
-                          <p>Rs.{men.price}</p>
+                          <p>Rs.{men.price1}</p>
                         </Card.Text>
                         <Button variant="primary">Choose Option</Button>
                       </Card.Body>

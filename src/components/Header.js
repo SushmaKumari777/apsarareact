@@ -40,6 +40,7 @@ const Header = () => {
                                         <Nav.Link href="#home"><Link to="/home">Home</Link></Nav.Link>
                                         <Nav.Link href="#action/3.5"><Link to="/jsr">JSR</Link></Nav.Link>
                                         <Nav.Link href="#action/3.6"><Link to="/example">New</Link></Nav.Link>
+                                        <Nav.Link href="#action/3.7"><Link to="/cart">Cart</Link></Nav.Link>
                                         {/* <p><Fontawesome icon={faSearch} /></p> */}
 
 
