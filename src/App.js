@@ -22,6 +22,8 @@ import ViewProduct from './components/ViewProduct';
 // import BuyNow from './components/BuyNow';
 import Category from './components/Category';
 import Buy from './components/Buy';
+import Cart from './components/Cart';
+import Example from './components/Example';
 
 
 function App() {
@@ -48,7 +50,9 @@ function App() {
         <Route path="/viewProduct/:productId" element={<ViewProduct />} />
         {/* <Route path="/buyNow" element={<BuyNow />} /> */}
         <Route path="/category" element={<Category />} />
-        <Route path="/buy" element={<Buy />} />
+        <Route path="/buy/:productId" element={<Buy />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/example" element={<Example />} />
 
 
         <Route path='*' element={<Home />} />

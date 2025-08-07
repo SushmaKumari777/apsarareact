@@ -173,7 +173,7 @@ const Home = () => {
             data.map((pooh) => {
               return (
                 <Col md={3}>
-                  <Link to={'/viewProduct/' + pooh.id}>
+                  <Link to={'/buy/' + pooh.id+pooh.title}>
                     <Card style={{ width: '18rem' }}>
                       <Card.Img src={pooh.photo} />
                       <Card.Body>
