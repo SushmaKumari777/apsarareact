@@ -5,7 +5,7 @@ const Buy = () => {
   const { productId } = useParams();
   const data = [
     {
-      "id": 1,
+      
       "title": "Gulabiya (गुलाबिया) Square Neck Bell Sleeves Kurti",
       "price1": 599,
       "price2": 699,
@@ -53,7 +53,7 @@ const Buy = () => {
       ]
     },
     {
-      "id": 2,
+      
       "title": "V-neck-kurti",
       "Description": "",
       "price1": 899,
@@ -124,7 +124,7 @@ const Buy = () => {
     },
 
     {
-      "id": 3,
+   
       "title": "v-neck-kurti",
       "Description": "",
       "price1": 899,
@@ -195,7 +195,7 @@ const Buy = () => {
     },
 
     {
-      "id": 4,
+      
       "title": "v-neck-kurti",
       "Description": "",
       "price1": 899,
@@ -266,7 +266,7 @@ const Buy = () => {
     },
 
     {
-      "id": 5,
+      
       "title": "v-neck-kurti",
       "Description": "",
       "price1": 899,
@@ -337,21 +337,213 @@ const Buy = () => {
     },
 
     {
-      "id": 6,
+     
       "title": "v-neck-kurti",
-      "price": 899
+      "price1": 899,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Kurti",
+      "other": "",
+      "idealFor": "women", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Fre",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
 
     {
-      "id": 7,
+   
       "title": "v-neck-kurti",
-      "price": 999
+      "price1": 899,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Kurti",
+      "other": "",
+      "idealFor": "women", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Fre",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     },
 
     {
-      "id": 8,
+   
       "title": "v-neck-kurti",
-      "price": 599
+      "price1": 899,
+      "price2": 999,
+      "brand": "",
+      "fit": "Regular", //regular or slim
+      "fabric": "Cotton", //cotton or georget
+      "sleeve": "FullSleeve", //full or half
+      "pattern": "Printed",
+      "neckType": "",
+      "ocassion": "Casual", //or office wear
+      "category": "Kurti",
+      "other": "",
+      "idealFor": "women", //women or men
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 48,
+      "discountedPrice": 599,
+      "discountedPercent": "50%",
+      "coloursAvailable": "",
+      "Shipping fee": "Fre",
+      "rating": [
+        {
+          "average": ""
+        }
+      ],
+      "size": [
+        "XS", "S", "M", "L", "XL", "XXL"
+      ],
+      "sizeChart": [
+        {
+          "size": "",
+          "bust": "",
+          "shoulder": "",
+          "bottomWaist": "",
+          "bottomLength": "",
+          "topLength": "",
+        }
+      ],
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "reviews": [
+        {
+          "rating": 3,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 4,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        },
+        {
+          "rating": 5,
+          "comment": "",
+          "date": "",
+          "reviewerName": "",
+          "reviewerEmail": ""
+        }
+      ]
     }
 
 
