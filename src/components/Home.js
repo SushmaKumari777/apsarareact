@@ -581,11 +581,7 @@ const Home = () => {
           "reviewerEmail": ""
         }
       ]
-    }
-    
-  ]
-  // ----------------Men section-------------------
-  const mens = [
+    },
     {
       "id": 1,
       "title": "The Sagar Blue Shirt",
@@ -1076,28 +1072,7 @@ const Home = () => {
         }
       ]
     }
-  ]
-  const collections = [
-    {
-      "id": 1,
-      "photo": "naina.webp",
-      "title": "Naina"
-    },
-    {
-      "id": 1,
-      "photo": "pooh.webp",
-      "title": "Pooh"
-    },
-    {
-      "id": 1,
-      "photo": "g.webp",
-      "title": "Geet"
-    },
-    {
-      "id": 1,
-      "photo": "a.webp",
-      "title": "Aisa"
-    }
+    
   ]
 
   return (
@@ -1137,7 +1112,7 @@ const Home = () => {
           }
         </Row>
       </section>
-      <section className='latestm'>
+      {/* <section className='latestm'>
         <Row>
           <h2>Latest Arrivals</h2>
           {
@@ -1162,8 +1137,8 @@ const Home = () => {
             )
           }
         </Row>
-      </section>
-      <section className='womencollections' >
+      </section> */}
+      {/* <section className='womencollections' >
         <Row>
           {
             collections.map((women) => {
@@ -1178,7 +1153,7 @@ const Home = () => {
             )
           }
         </Row>
-      </section>
+      </section> */}
 
 
       {/* ------------------------Latest Arrivals Women Section----------------------- */}
