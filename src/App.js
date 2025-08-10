@@ -24,6 +24,7 @@ import Category from './components/Category';
 import Buy from './components/Buy';
 import Cart from './components/Cart';
 import Example from './components/Example';
+import Checkout from './components/Checkout';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
         <Route path="/buy/:productId" element={<Buy />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/example" element={<Example />} />
+        <Route path="/checkout" element={<Checkout />} />
 
 
         <Route path='*' element={<Home />} />

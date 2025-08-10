@@ -976,10 +976,8 @@ const Home = () => {
         }
       ],
       "images": [
-        "p1001.webp",
-        "p1002.webp",
-        "p1003.jpg",
-        "p1005.webp"
+        "p1001.webp"
+      
       ],
       "reviews": [
         {
@@ -1094,7 +1092,8 @@ const Home = () => {
           {
             data.map((pooh) => {
               return (
-                <Col md={3} className='square'>
+                
+                <Col md={3}>
                   <Link to={'/buy/' +pooh.title}>
                     <Card style={{ width: '18rem' }}>
                       <Card.Img src={pooh.images[0]} />
@@ -1108,6 +1107,7 @@ const Home = () => {
                     </Card>
                   </Link>
                 </Col>
+                
               )
             }
             )
@@ -1118,7 +1118,7 @@ const Home = () => {
         <Row>
           <h2>Latest Arrivals</h2>
           {
-            mens.map((men,index) => {
+            mens.map((men) => {
               return (
                 <Col md={3}>
                   <Link to={'/buy/' + men.id}>
