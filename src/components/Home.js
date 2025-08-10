@@ -581,7 +581,9 @@ const Home = () => {
           "reviewerEmail": ""
         }
       ]
-    },
+    }
+  ]
+  const mens=[
     {
       "id": 1,
       "title": "The Sagar Blue Shirt",
@@ -1092,7 +1094,7 @@ const Home = () => {
           {
             data.map((pooh) => {
               return (
-                <Col md={3}>
+                <Col md={3} className='square'>
                   <Link to={'/buy/' +pooh.title}>
                     <Card style={{ width: '18rem' }}>
                       <Card.Img src={pooh.images[0]} />
@@ -1112,11 +1114,11 @@ const Home = () => {
           }
         </Row>
       </section>
-      {/* <section className='latestm'>
+      <section className='latestm'>
         <Row>
           <h2>Latest Arrivals</h2>
           {
-            mens.map((men) => {
+            mens.map((men,index) => {
               return (
                 <Col md={3}>
                   <Link to={'/buy/' + men.id}>
@@ -1137,7 +1139,7 @@ const Home = () => {
             )
           }
         </Row>
-      </section> */}
+      </section>
       {/* <section className='womencollections' >
         <Row>
           {

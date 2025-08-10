@@ -46,7 +46,10 @@
 .latestm h2 {
   color: #641E16;
 }
-
+.square{
+  width:400px;
+  background-color: #641E16;
+}
 .product {
   width: 100%;
   text-align: center;
