@@ -46,7 +46,13 @@
 .latestm h2 {
   color: #641E16;
 }
+/* .card{
+  width: 100px;
+  height: 200px;
+  display: flex;
+  float:left;
 
+} */
 .product {
   width: 100%;
   text-align: center;

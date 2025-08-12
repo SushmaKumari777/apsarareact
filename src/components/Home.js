@@ -582,10 +582,8 @@ const Home = () => {
         }
       ]
     }
-    
   ]
-  // ----------------Men section-------------------
-  const mens = [
+  const mens=[
     {
       "id": 1,
       "title": "The Sagar Blue Shirt",
@@ -978,10 +976,8 @@ const Home = () => {
         }
       ],
       "images": [
-        "p1001.webp",
-        "p1002.webp",
-        "p1003.jpg",
-        "p1005.webp"
+        "p1001.webp"
+      
       ],
       "reviews": [
         {
@@ -1076,28 +1072,7 @@ const Home = () => {
         }
       ]
     }
-  ]
-  const collections = [
-    {
-      "id": 1,
-      "photo": "naina.webp",
-      "title": "Naina"
-    },
-    {
-      "id": 1,
-      "photo": "pooh.webp",
-      "title": "Pooh"
-    },
-    {
-      "id": 1,
-      "photo": "g.webp",
-      "title": "Geet"
-    },
-    {
-      "id": 1,
-      "photo": "a.webp",
-      "title": "Aisa"
-    }
+    
   ]
 
   return (
@@ -1117,6 +1092,7 @@ const Home = () => {
           {
             data.map((pooh) => {
               return (
+                
                 <Col md={3}>
                   <Link to={'/buy/' +pooh.title}>
                     <Card style={{ width: '18rem' }}>
@@ -1131,6 +1107,7 @@ const Home = () => {
                     </Card>
                   </Link>
                 </Col>
+                
               )
             }
             )
@@ -1163,7 +1140,7 @@ const Home = () => {
           }
         </Row>
       </section>
-      <section className='womencollections' >
+      {/* <section className='womencollections' >
         <Row>
           {
             collections.map((women) => {
@@ -1178,7 +1155,7 @@ const Home = () => {
             )
           }
         </Row>
-      </section>
+      </section> */}
 
 
       {/* ------------------------Latest Arrivals Women Section----------------------- */}
